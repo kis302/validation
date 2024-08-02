@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./succ.html" method="post">
+        <dl>
+            <dt>
+                <label for="name">USERNAME</label>
+            </dt>
+            <dd>
+                <input type="text" name="username" id="name" required pattern="[a-zA-Z/d/s @#$&]+">
+            </dd>
+            <dt>
+                <label for="pass">PASSWORD</label>
+            </dt>
+            <dd>
+                <input type="password" id="pass" name="password" required pattern="[a-zA-Z/d]+">
+            </dd>
+            <dt>
+                <label for="email">EMAIL</label>
+            </dt>
+            <dd>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z/d @]+">
+            </dd>
+            <dt>
+                <label for="phno">MOBILE NUMBER</label>
+            </dt>
+            <dd>
+                <input type="number" name="phno" id="phno" required pattern="[0-9]+"{10} >
+            </dd>
+            <dt>
+                <label for="">GENDER</label>
+            </dt>
+            <dd>
+                <input type="radio" id="male" name="gender" value="MALE" required>
+                <label for="male">MALE</label>
+            </dd>
+            <dd>
+                <input type="radio" id="female" name="gender" value="FEMALE" required>
+                <label for="female">FEMALE</label>
+            </dd>
+            <dt>
+                <label for="dob">DOB</label>
+            </dt>
+            <dd>
+                <input type="datetime-local" id="dob" name="DOB" required>
+            </dd>
+       </dl>
+       <input type="submit" value="register">
+    </form>
+    
+    
+</body>
+</html>
